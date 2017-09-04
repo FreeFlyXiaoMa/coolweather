@@ -20,7 +20,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:26.+'
+    compile files('src/libs/glide-full-4.0.0.jar')
+    compile files('src/libs/gson-2.1.jar')
+    compile files('src/libs/litepal-1.6.0.jar')
+    compile files('src/libs/okhttp-3.4.1.jar')
+    compile files('src/libs/okio-1.6.0.jar')
 }
